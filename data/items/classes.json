@@ -1,0 +1,43 @@
+{
+  "fighter": {
+    "hitdice": "1d10",
+    "profiencies": {
+      "weapon": ["simple", "martial"],
+      "armor": ["all", "shield"],
+      "tool": [],
+      "attribute": ["str", "con"],
+      "skill": {
+        "choose": 2,
+        "from": [
+          "acrobatics",
+          "animal_handling",
+          "athletics",
+          "history",
+          "insight",
+          "intimidation",
+          "perception",
+          "survival"
+        ]
+      },
+      "language": []
+    },
+    "features": {
+      "fighting_style": [1],
+      "second_wind": [1],
+      "action_surge": [2],
+      "martial_archetype": [3],
+      "ability_score": [4, 6, 8, 12, 14, 16, 19],
+      "extra_attack": [5, 11, 20],
+      "indomitable": [9, 13, 17]
+    },
+    "equipment": [
+      [["chain_mail"], ["leather_armor", "longbow", "20 arrow"]],
+      [
+        ["martial_weapon", "shield"],
+        ["martial_weapon", "martial_weapon"]
+      ],
+      [["light_crossbow", "20 bolt"], ["2 handaxe"]],
+      [["dungeoneers_pack"], ["explorers_pack"]]
+    ]
+  }
+}
