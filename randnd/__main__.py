@@ -1,4 +1,4 @@
-from randomizer import Randomizer
+from randnd.randomizer import Randomizer
 
 
 def main():

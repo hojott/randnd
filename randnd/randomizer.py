@@ -1,8 +1,8 @@
 import random
 
-from character import Character
+from randnd.character import Character
 
-from tables import gender
+from randnd.data.functions import get_gender_table
 
 
 def dice(max: int, amount=1) -> int:
@@ -21,4 +21,5 @@ class Randomizer:
         """Gender, race and background should be generated first"""
 
     def generate_gender(self):
-        self.character.gender = gender[dice(100)]
+        gender_table = get_gender_table()
+        self.character.gender = gender_table[dice(100)]

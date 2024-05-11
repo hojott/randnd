@@ -1,20 +1,4 @@
-from enums import (
-    Class,
-    Gender,
-    Background,
-    Race,
-    Type,
-    Size,
-    WeaponType,
-    ArmorType,
-    ToolType,
-    Attribute,
-    Skill,
-    Language,
-    Feature,
-    Equipment,
-    Spell,
-)
+from randnd.data.classes import Class, Gender
 
 
 class Character:
@@ -23,10 +7,10 @@ class Character:
         self.age: int
         self.gender: Gender
         self.cclass: Class
-        self.race: Race
-        self.background: Background
-        self.type: Type
-        self.size: Size
+        self.race: str
+        self.background: str
+        self.type: str
+        self.size: str
 
         self.attributes: list[int, int, int, int, int, int]
 
@@ -34,17 +18,17 @@ class Character:
         self.hitdice: list[int, int]
         self.ac: int
 
-        self.weapon_profs: set[WeaponType]
-        self.armor_profs: set[ArmorType]
-        self.tool_profs: set[ToolType]
-        self.ability_profs: set[Attribute]
-        self.skill_profs: set[Skill]
-        self.languages: set[Language]
+        self.weapon_profs: set[str]
+        self.armor_profs: set[str]
+        self.tool_profs: set[str]
+        self.ability_profs: set[str]
+        self.skill_profs: set[str]
+        self.languages: set[str]
 
-        self.features: set[Feature]
+        self.features: set[str]
 
-        self.equipment: list[Equipment]
-        self.backpack: list[Equipment]
+        self.equipment: list[str]
+        self.backpack: list[str]
 
-        self.spells: list[Spell]
-        self.spellbook: list[Spell]
+        self.spells: list[str]
+        self.spellbook: list[str]
