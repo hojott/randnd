@@ -7,6 +7,14 @@ class Class(Item):
         super().__init__(classname, DATA_FOLDER + "classes.json", tablename=classname)
 
 
+class Background(Item):
+    def __init__(self, backgroundname: str):
+        # TODO: make proper class instead of using dict
+        super().__init__(
+            backgroundname, DATA_FOLDER + "backgrounds.json", tablename=backgroundname
+        )
+
+
 class Gender(Item):
     def __init__(self, gender: str):
         super().__init__(gender, DATA_FOLDER + "genders.json", tablename=gender)

@@ -1,0 +1,26 @@
+{
+  "soldier": {
+    "profiencies": {
+      "weapon": [],
+      "armor": [],
+      "tool": {
+        "choose": 1,
+        "from": [
+          ["dice_set", "vehicles_land"],
+          ["card_set", "vehicles_land"]
+        ]
+      },
+      "attribute": [],
+      "skill": ["athletics", "intimidation"],
+      "language": []
+    },
+    "features": { "specialty": 1, "military_rank": 1 },
+    "equipment": [
+      [["insignia_of_rank"]],
+      [["trophy_dagger"], ["trophy_broken_blade"], ["trophy_piece_of_banner"]],
+      [["set_of_bone_dice"], ["deck_of_cards"]],
+      [["common_clothes"]],
+      [["10gp"]]
+    ]
+  }
+}

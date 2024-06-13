@@ -10,15 +10,26 @@ class TestGenderRandomizer(unittest.TestCase):
         self.assertIn(str(r.character.gender), ["male", "female", "nonbinary"])
 
 
-class TestFighter(unittest.TestCase):
-    def test_fighter_instance(self):
+class TestClass(unittest.TestCase):
+    def test_class_instance(self):
         cclass = randnd.data.functions.get_class("fighter")
         self.assertIsInstance(cclass, randnd.data.classes.Class)
 
-    def test_fighter_equal(self):
+    def test_class_equal(self):
         c1 = randnd.data.functions.get_class("fighter")
         c2 = randnd.data.functions.get_class("fighter")
         self.assertEqual(str(c1), str(c2))
+
+
+class TestBackground(unittest.TestCase):
+    def test_background_instance(self):
+        background = randnd.data.functions.get_background("soldier")
+        self.assertIsInstance(background, randnd.data.classes.Background)
+
+    def test_class_equal(self):
+        b1 = randnd.data.functions.get_background("soldier")
+        b2 = randnd.data.functions.get_background("soldier")
+        self.assertEqual(str(b1), str(b2))
 
 
 class TestGender(unittest.TestCase):
